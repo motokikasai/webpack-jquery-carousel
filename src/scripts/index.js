@@ -3,5 +3,14 @@ import "../styles/main.scss";
 // Import any additional modules you want to include below \/
 import "bootstrap";
 import "bootstrap-scss";
+import "jquery";
+
+import $ from "jquery";
+window.jQuery = $;
+window.$ = $;
 
 // \/ All of your javascript should go here \/
+
+$(function() {
+  $('[data-toggle="tooltip"]').tooltip();
+});
