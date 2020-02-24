@@ -25,15 +25,15 @@ const config = {
         }
       },
       // index.html
-      // {
-      //   test: /\.html$/,
-      //   use: [
-      //     {
-      //       loader: 'html-loader',
-      //       options: { minimize: true }
-      //     }
-      //   ]
-      // },
+      {
+        test: /\.html$/,
+        use: [
+          {
+            loader: "html-loader",
+            options: { minimize: true }
+          }
+        ]
+      },
       // Styles
       {
         test: /\.css$|\.scss$/,
